@@ -5,48 +5,88 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Elias Jan Akbari</title>
   <style>
-    body {
-      font-family: sans-serif;
-      text-align: center;
-      background: #111;
-      color: white;
-    }
 
-    .links-container {
-      margin-top: 40px;
-    }
+body {
+  background-image: url('EJA-Website-Background'); /* replace with your actual path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* optional for parallax-like effect */
+}
 
-    .links-button {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: #222;
-      border: none;
-      margin: 10px auto;
-      padding: 10px 20px;
-      width: 250px;
-      border-radius: 10px;
-      cursor: pointer;
-    }
-
-    #links-image {
-      height: 24px;
-      margin-right: 10px;
-    }
 
     #main-links-image {
-      width: 120px;
-      border-radius: 50%;
-      margin-bottom: 20px;
-    }
+    width: 100px;
+    margin-top: 20px;
+}
 
-    #links-text {
-      font-size: 16px;
-    }
+#links-image {
+    width: 50px;
+    float: left;
+}
 
-    a {
-      text-decoration: none;
+.links-button {
+  background-color: #1d1e1d;
+  width: 400px;
+  border: 1px solid transparent;
+  border-radius: 3rem;
+  box-sizing: border-box;
+  color: #f4d5a3;
+  cursor: pointer;
+  flex: 0 0 auto;
+  font-family: Poppins;
+  font-size: 1.125rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+  padding: .75rem 1.2rem;
+  text-align: center;
+  transition-duration: .2s;
+  transition-property: background-color,border-color,color,fill,stroke;
+  transition-timing-function: cubic-bezier(.4, 0, 0.2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+@media only screen and (max-width: 550px) {
+    .links-button {
+        width: 100%;
     }
+}
+
+.links-button:hover {
+  background-color: #073c1f;
+}
+
+.links-button:focus {
+  box-shadow: none;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+@media (min-width: 768px) {
+  .links-button {
+    padding: .75rem 1.5rem;
+  }
+}
+
+.links-container {
+    text-align: center;
+    background-color: #f4d5a3;
+    overflow: hidden;
+    width: auto;
+    margin: auto;
+    min-height: 700px;
+}
+
+#links-text{
+    margin-top: 13px;
+    font-size: 20px;
+}
+
+#links-div{
+    margin: 10px 0px;
+}
   </style>
 </head>
 <body>
@@ -59,25 +99,37 @@
             <img id="main-links-image" src="EJA-Profile-Pic.png" alt="Profile">
         </div>
 
-        <!-- Repeat for each link -->
-        <div id="links-div">
-            <a href="https://www.youtube.com/c/futmentor" target="_blank">
-                <button class="links-button"><img id="links-image" src="uploads/youtube.png">
-                <div id="links-text">YouTube</div>
-                </button>
+         <div id="links-div" role="button">
+            <a href="https://www.youtube.com/@EliasJanAkbariOfficial" target="_blank">
+            <button class="links-button" role="button"><img id="links-image" src="youtube.png">
+            <div id="links-text">YouTube</div>
+            </button>
             </a>
         </div>
 
-     <div id="links-div">
-            <a href="https://www.youtube.com/c/futmentor" target="_blank">
-                <button class="links-button"><img id="links-image" src="uploads/youtube.png">
-                <div id="links-text">YouTube</div>
-                </button>
+        <div id="links-div" role="button">
+            <a href="https://www.instagram.com/eliasjanakbari/" target="_blank">
+            <button class="links-button" role="button"><img id="links-image" src="instagram.png">
+            <div id="links-text">Instagram</div>
+            </button>
             </a>
         </div>
 
-        <!-- Add your other links here... -->
-        <!-- Twitter, Instagram, etc. -->
+        <div id="links-div" role="button">
+            <a href="https://www.tiktok.com/@eliasjanakbari" target="_blank">
+            <button class="links-button" role="button"><img id="links-image" src="tiktok.png">
+            <div id="links-text">TikTok</div>
+            </button>
+            </a>
+        </div>
+
+        <div id="links-div" role="button">
+            <a href="https://x.com/EliasJanAkbari" target="_blank">
+            <button class="links-button" role="button"><img id="links-image" src="x-logo.png">
+            <div id="links-text">X (Twitter)</div>
+            </button>
+            </a>
+        </div>
 
   </div>
 </div>
